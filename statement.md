@@ -1,10 +1,6 @@
-# Welcome!
+# How many stars?
 
-This Python template lets you get started quickly with a simple one-page playground.
-
-```python runnable
-print('Hello World!')
-```
+@[Luke, how many stars are there in these galaxies?]({"stubs": ["universe.py"], "command": "python3 test_universe.py"})
 
 # Quiz
 
