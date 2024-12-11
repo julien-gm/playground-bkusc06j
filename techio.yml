@@ -1,4 +1,4 @@
-title: Simple Python Template
+title: Simple Python Test
 plan:
 - title: Python Snippet
-  statement: statement.md
+  statement: README.md
