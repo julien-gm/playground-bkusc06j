@@ -4,6 +4,6 @@ def is_anagram(word1: str, word2: str) -> bool:
 
 def word_to_dict(word: str) -> dict:
     letters = {}
-    for letter in word:
+    for letter in word.lower():
         letters[letter] = 1 if letter not in letters else letters[letter] + 1
     return letters
