@@ -1,6 +1,5 @@
 from int_palindrome import is_int_palindrome
 from int_palindrome_v0 import is_int_palindrome_julien
-from collections.abc import Callable
 from tech_io_utils import send_msg, success, fail
 import builtins
 
@@ -17,8 +16,7 @@ orig_str = builtins.str
 builtins.str = new_str
 
 
-def get_nb_palindromes(min_value: int, max_value: int, palindrome_fct: Callable[int]) -> int:
-    nb_palindromes = 0
+def get_nb_palindromes(min_value: int, max_value: int, palindrome_fct: callable) -> int:
     return len([num for num in range(min_value, max_value) if palindrome_fct(num)])
 
 
