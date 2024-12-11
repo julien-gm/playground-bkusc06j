@@ -3,11 +3,11 @@ from int_palindrome_v0 import is_int_palindrome_julien
 from tech_io_utils import send_msg, success, fail
 import builtins
 
-str_builtin_used = False
+sorted_builtin_used = False
 
 
 def new_str(x):
-    global str_builtin_used
+    global sorted_builtin_used
     str_builtin_used = True
     return orig_str(x)
 
@@ -31,7 +31,7 @@ def test_is_int_palindrome():
         assert number_10001 == get_nb_palindromes(0, 990, is_int_palindrome_julien), f"{number_10001} != {get_nb_palindromes(0, 990, is_int_palindrome_julien)}"
         success()
 
-        if str_builtin_used:
+        if sorted_builtin_used:
             send_msg("Kudos 🌟", "Great job! 🎉")
             send_msg("Warning ⚠️", "You used the str builtin. Try to solve the exercise without using it")
         else:
