@@ -2,11 +2,11 @@ from anagram import is_anagram
 from tech_io_utils import send_msg, success, fail
 import builtins
 
-str_builtin_used = 0
+sorted_builtin_used = 0
 
 
 def new_sorted(x):
-    global str_builtin_used
+    global sorted_builtin_used
     sorted_builtin_used += 1
     return orig_sorted(x)
 
@@ -16,7 +16,7 @@ builtins.sorted = new_sorted
 
 
 def test_is_anagram():
-    global str_builtin_used
+    global sorted_builtin_used
     sorted_builtin_used = 0
     try:
         assert not is_anagram("a", "b"), "Running is_anagram... Expected False, got True: a is not an anagram of b"
