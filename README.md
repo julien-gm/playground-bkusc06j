@@ -1,11 +1,11 @@
-# How many stars?
+# Universe
 
 @[Luke, how many stars are there in these galaxies?]({"stubs": ["universe.py"], "command": "python3 test_universe.py"})
 
-# Quiz
+# Palindrome
 
-?[What is the answer to Life, the Universe and Everything?]
--[ ] There is no answer to that!
--[ ] Sleep and eat
--[x] Easy, this is 42
--[ ] Peace & Love
+@[Are theses words palindromes?]({"stubs": ["int_palindrome.py"], "command": "python3 test_int_palindrome.py"})
+
+# Acronym
+
+@[What is the acronym of these sentences?]({"stubs": ["anagram.py"], "command": "python3 test_anagram.py"})
