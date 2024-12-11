@@ -1,6 +1,6 @@
 # How many stars?
 
-@[Luke, how many stars are there in these galaxies?]({"stubs": ["python-project/universe.py"], "command": "python3 python-project/test_universe.py"})
+@[Luke, how many stars are there in these galaxies?]({"stubs": ["universe.py"], "command": "python3 test_universe.py"})
 
 # Quiz
 
@@ -9,5 +9,3 @@
 -[ ] Sleep and eat
 -[x] Easy, this is 42
 -[ ] Peace & Love
-
-
