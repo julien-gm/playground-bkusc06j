@@ -24,6 +24,7 @@ def test_is_anagram():
         assert is_anagram("cab", "bac"), "Running is_anagram... Expected True, got False: cab is an anagram of bac"
         assert not is_anagram("abba", "bab"), "Running is_anagram... Expected False, got True: abba is an anagram of bab"
         assert is_anagram("abba", "Baba"), "Running is_anagram... Expected True, got False: abba is an anagram of Baba"
+        assert not is_anagram("abba", "baca"), "Running is_anagram... Expected False, got True: abba is not an anagram of baca"
         success()
         send_msg("Kudos 🌟", "Great job! 🎉")
         if sorted_builtin_used >= 10:
